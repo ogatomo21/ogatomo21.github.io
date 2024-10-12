@@ -1,0 +1,73 @@
+.profile {
+    display: flex;
+    padding-top: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.profile img {
+    width: 90%;
+    max-width: 100px;
+    border: 5px #7086bd solid;
+    border-radius: 100%;
+    margin-right: 3vw;
+}
+.links-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.links {
+    width: 100%;
+    max-width: 600px;
+}
+.sns {
+    display: flex;
+    align-items: center;
+}
+.snsTitle {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.sns > .icon {
+    margin-right: 3vw;
+}
+.sns-container {
+    color: var(--bulma-body-color);
+}
+.footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.footer-link a {
+    margin-top: 2vh;
+    padding: 0 2vw 0 2vw;
+    border-right: 2px hsl(0, 0%, 86%) solid;
+}
+.footer-link a:first-child {
+    border-left: 2px hsl(0, 0%, 86%) solid;
+    border-right: 2px hsl(0, 0%, 86%) solid;
+}
+
+/* Light Only */
+@media (prefers-color-scheme: light) {
+    body {
+        background: linear-gradient(-45deg, #f9c2eb, #a8c2ee, #c2f9d0, #ffdea5) fixed;
+        background-size: 800% 800%;
+        animation: GradietionAnimation 9s ease infinite;
+    }
+
+    @keyframes GradietionAnimation {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
