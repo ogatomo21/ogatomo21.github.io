@@ -1,3 +1,4 @@
+/* プロフ画像関連 */
 .profile {
     display: flex;
     padding-top: 10vh;
@@ -5,35 +6,28 @@
     align-items: center;
 }
 .profile img {
-    width: 90%;
-    max-width: 100px;
+    width: 80%;
+    max-width: 256px;
     border: 5px #7086bd solid;
     border-radius: 100%;
-    margin-right: 3vw;
 }
+
+/* リンク集関連 */
 .links-container {
     display: flex;
     width: 100%;
     justify-content: center;
 }
-.links {
-    width: 100%;
-    max-width: 600px;
-}
-.sns {
-    display: flex;
-    align-items: center;
-}
-.snsTitle {
-    font-size: 1.4rem;
-    font-weight: bold;
-}
-.sns > .icon {
+.links {width: 100%;max-width: 600px;}
+.sns {display: flex;align-items: center;}
+.snsTitle {font-size: 1.4rem;font-weight: bold;}
+.sns > .icon {margin-right: 3vw;}
+.sns-container {color: var(--bulma-body-color);}
+summary::maker{
     margin-right: 3vw;
 }
-.sns-container {
-    color: var(--bulma-body-color);
-}
+
+/* フッター関連 */
 .footer-link {
     display: flex;
     flex-wrap: wrap;
@@ -54,21 +48,15 @@
 
 /* Light Only */
 @media (prefers-color-scheme: light) {
+    /* 背景のグラデーション */
     body {
         background: linear-gradient(-45deg, #f9c2eb, #a8c2ee, #c2f9d0, #ffdea5) fixed;
         background-size: 800% 800%;
         animation: GradietionAnimation 9s ease infinite;
     }
-
     @keyframes GradietionAnimation {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
     }
 }
