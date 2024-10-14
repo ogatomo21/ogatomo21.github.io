@@ -26,6 +26,9 @@
 summary::maker{
     margin-right: 3vw;
 }
+summary{
+    margin-bottom: 3vh;
+}
 
 /* フッター関連 */
 .footer-link {
